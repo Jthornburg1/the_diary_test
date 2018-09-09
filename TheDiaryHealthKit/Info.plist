@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSHealthShareUsageDescription</key>
+	<string>You&apos;re health data will be used only to demonstrate a feature.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>You&apos;re health data will be used only to demonstrate a feature.</string>
 </dict>
 </plist>
