@@ -19,6 +19,10 @@
 		B160A9732142BF9B007D8EF5 /* HealthKitSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A9722142BF9B007D8EF5 /* HealthKitSetUp.swift */; };
 		B160A9792143FA86007D8EF5 /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A9782143FA86007D8EF5 /* HeartRate.swift */; };
 		B160A97B2143FAAD007D8EF5 /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A97A2143FAAD007D8EF5 /* HeartRateViewModel.swift */; };
+		B160A97E21454F63007D8EF5 /* HeartRateAdderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A97C21454F63007D8EF5 /* HeartRateAdderViewController.swift */; };
+		B160A97F21454F63007D8EF5 /* HeartRateAdderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B160A97D21454F63007D8EF5 /* HeartRateAdderViewController.xib */; };
+		B160A9882145DA96007D8EF5 /* HeartRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160A9862145DA96007D8EF5 /* HeartRateCell.swift */; };
+		B160A9892145DA96007D8EF5 /* HeartRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B160A9872145DA96007D8EF5 /* HeartRateCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		B160A9722142BF9B007D8EF5 /* HealthKitSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetUp.swift; sourceTree = "<group>"; };
 		B160A9782143FA86007D8EF5 /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
 		B160A97A2143FAAD007D8EF5 /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
+		B160A97C21454F63007D8EF5 /* HeartRateAdderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateAdderViewController.swift; sourceTree = "<group>"; };
+		B160A97D21454F63007D8EF5 /* HeartRateAdderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateAdderViewController.xib; sourceTree = "<group>"; };
+		B160A9862145DA96007D8EF5 /* HeartRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateCell.swift; sourceTree = "<group>"; };
+		B160A9872145DA96007D8EF5 /* HeartRateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeartRateCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +171,11 @@
 		B160A9752143F9FC007D8EF5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B160A9852145DA6E007D8EF5 /* TableViewCells */,
+				B160A98021455462007D8EF5 /* PickerDisplayView */,
 				B160A9402142BA3B007D8EF5 /* ViewController.swift */,
+				B160A97C21454F63007D8EF5 /* HeartRateAdderViewController.swift */,
+				B160A97D21454F63007D8EF5 /* HeartRateAdderViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +194,22 @@
 				B160A9722142BF9B007D8EF5 /* HealthKitSetUp.swift */,
 			);
 			path = HealthKitHelpers;
+			sourceTree = "<group>";
+		};
+		B160A98021455462007D8EF5 /* PickerDisplayView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PickerDisplayView;
+			sourceTree = "<group>";
+		};
+		B160A9852145DA6E007D8EF5 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B160A9862145DA96007D8EF5 /* HeartRateCell.swift */,
+				B160A9872145DA96007D8EF5 /* HeartRateCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +321,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B160A97F21454F63007D8EF5 /* HeartRateAdderViewController.xib in Resources */,
+				B160A9892145DA96007D8EF5 /* HeartRateCell.xib in Resources */,
 				B160A9492142BA3E007D8EF5 /* LaunchScreen.storyboard in Resources */,
 				B160A9462142BA3E007D8EF5 /* Assets.xcassets in Resources */,
 				B160A9442142BA3B007D8EF5 /* Main.storyboard in Resources */,
@@ -320,11 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B160A97E21454F63007D8EF5 /* HeartRateAdderViewController.swift in Sources */,
 				B160A9412142BA3B007D8EF5 /* ViewController.swift in Sources */,
 				B160A97B2143FAAD007D8EF5 /* HeartRateViewModel.swift in Sources */,
 				B160A9732142BF9B007D8EF5 /* HealthKitSetUp.swift in Sources */,
 				B160A9792143FA86007D8EF5 /* HeartRate.swift in Sources */,
 				B160A93F2142BA3B007D8EF5 /* AppDelegate.swift in Sources */,
+				B160A9882145DA96007D8EF5 /* HeartRateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
