@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "HealthKit Heart-Rates"
+        title = "Heart-Rates"
         
         tableView.tableFooterView = UIView()
         
